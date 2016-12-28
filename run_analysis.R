@@ -1,6 +1,7 @@
 #This file gets the data from the web, merges only the relevant information and gets all the means into one table
 
 #Gets the data and unzipped it:
+DownloadTime <- Sys.time()     #Saves download date and hour
 fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileURL, destfile = "GettingAndCleaning.zip")
 unzip("GettingAndCleaning.zip")
