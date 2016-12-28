@@ -42,12 +42,10 @@ Data$subject <- as.factor(Data$subject)
 #Checks and filter NA's from the data:
 Data <- Data[complete.cases(Data),]
 
-#Gets required libraries:
-library(reshape2)
-
 #Reconstructs the data into average for every subject, feature and activity:
+library(reshape2)    #Gets required libraries:
 tempoData <- melt(Data, id = c("subject", "activity"))
 AVGData <- dcast(tempoData, subject + activity ~ variable, mean)
 
 #Puts the final table in a new TXT file:
-write.table(AVGData, file = "AVGData", quote = FALSE, na = "NA", row.names = FALSE)
+write.table(AVGData, file = "AVGData", quote = FALSE, row.names = FALSE)
