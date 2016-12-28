@@ -1,12 +1,13 @@
 # Code Book #
 This data contains measurments from 30 subjects; the are six different activities in the data, and for each of them there are some features that were measured. Each observation in the final data table contains the mean of all the data for one subject and one activity from one feature.
 
-## The data proccesing ##
-1. Reading the activity and features data
-2. Filtering only the relevant features from the data, i.e., means and STDs
-3. Combining all the data together, giving it appropriate names and labels, and turns the factors into factors
-4. Clean out all the NAs
-5. Reshaping the data so that it will include only the mean for each subject and each activity for every feature
+## The activities ##
+1. Walking = 1
+2. Walking upstairs = 2
+3. Walking downstairs =3
+4. Sitting = 4
+5. Standing = 5
+6. Laying = 6
 
 ## The features ##
 The original data contains a lot more features but this table contains only the means and stds; the features included here are the follow, and there are 66 of them.
